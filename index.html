@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Requirement 5: Page title must be "Web GIS application" -->
+<title>Web GIS application</title>
+<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-layout">
+  <!-- SIDEBAR COMMAND CENTER -->
+  <aside class="app-sidebar">
+    <div class="sidebar-header">
+      <div class="brand-tag">AMMAD KHALIL</div>
+      <h1>Environmental Portal Pakistan</h1>
+      <p>Interactive Web GIS Application</p>
+      <span id="sampleBadge" class="sample-badge" hidden>Lab Assignment No. 1</span>
+    </div>
+
+    <div class="sidebar-section-title">Live Telemetry Metrics</div>
+    
+    <div class="sidebar-dashboard" id="dashboard" aria-label="Dashboard statistics">
+      <div class="metric-card">
+        <span class="m-label">Tracked Cities</span>
+        <span class="m-value" id="stat-cities">–</span>
+      </div>
+      <div class="metric-card">
+        <span class="m-label">Weather Stations</span>
+        <span class="m-value" id="stat-stations">–</span>
+      </div>
+      <div class="metric-card">
+        <span class="m-label">Env Records</span>
+        <span class="m-value" id="stat-env">–</span>
+      </div>
+      <div class="metric-card">
+        <span class="m-label">Rainfall Stations</span>
+        <span class="m-value" id="stat-rain">–</span>
+      </div>
+      <div class="metric-card primary">
+        <span class="m-label">Avg Temperature</span>
+        <span class="m-value" id="stat-temp">–</span>
+        <span class="m-sub" id="stat-temp-sub"></span>
+      </div>
+      <div class="metric-card">
+        <span class="m-label">Avg Humidity</span>
+        <span class="m-value" id="stat-hum">–</span>
+        <span class="m-sub" id="stat-hum-sub"></span>
+      </div>
+      <div class="metric-card">
+        <span class="m-label">Avg AQI</span>
+        <span class="m-value" id="stat-aqi">–</span>
+        <span class="m-sub" id="stat-aqi-sub"></span>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <p>BS Remote Sensing & GIS<br>Interactive Web GIS Application</p>
+    </div>
+  </aside>
+
+  <!-- MAIN MAP VIEW -->
+  <main class="map-wrap">
+    <div id="map"></div>
+  </main>
+</div>
+
+<script src="lib/leaflet/leaflet.js"></script>
+<script src="data/embedded-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
